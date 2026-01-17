@@ -1,3 +1,4 @@
+
 * {
     margin: 0;
     padding: 0;
@@ -191,6 +192,7 @@ nav {
     animation: fadeInRight 1s ease;
 }
 
+
 .hero-image {
     width: 400px;
     height: 400px;
@@ -291,6 +293,68 @@ section {
     line-height: 1.6;
 }
 
+/* ===== Education Section ===== */
+.education {
+    background: white;
+}
+
+.education-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 60px;
+}
+
+.education-card {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 35px 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(102,126,234,0.3);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.education-card::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -50%;
+    width: 200%;
+    height: 200%;
+    background: rgba(255,255,255,0.05);
+    transform: rotate(25deg);
+}
+
+.education-card:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 15px 40px rgba(102,126,234,0.5);
+}
+
+.education-card h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    position: relative;
+    z-index: 1;
+}
+
+.education-card p {
+    font-size: 16px;
+    opacity: 0.95;
+    margin-bottom: 8px;
+    position: relative;
+    z-index: 1;
+}
+
+.education-card span {
+    font-size: 14px;
+    opacity: 0.85;
+    font-weight: 500;
+    position: relative;
+    z-index: 1;
+}
+
 /* Projects Section */
 .projects {
     background: #f8f9fa;
@@ -351,6 +415,7 @@ section {
     line-height: 1.8;
     text-align: left;
 }
+
 
 .achievements-list li, .blogs-list li, .publications-list li {
     margin-bottom: 10px;

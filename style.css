@@ -1,5 +1,3 @@
-
-Humaira Jannat, [1/17/2026 1:39 PM]
 * {
     margin: 0;
     padding: 0;
@@ -193,7 +191,6 @@ nav {
     animation: fadeInRight 1s ease;
 }
 
-Humaira Jannat, [1/17/2026 1:39 PM]
 .hero-image {
     width: 400px;
     height: 400px;
@@ -402,7 +399,6 @@ footer {
     .nav-links { gap: 20px; font-size: 14px; }
 }
 
-Humaira Jannat, [1/17/2026 1:39 PM]
 @media (max-width: 640px) {
     .hero-text h1 { font-size: 36px; }
     .hero-image { width: 280px; height: 280px; }
